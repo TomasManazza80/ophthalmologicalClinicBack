@@ -23,7 +23,7 @@ const cirugiasRoutes = require("./routes/cirugiasRoutes");
 const serviciosRoutes = require("./routes/serviciosRoutes");
 const cirugias = require('./models/cirugias/cirugias');
 
-const API_URL = 'http://localhost:3000';
+const API_URL = 'https://ophthalmologicalclinicback.onrender.com';
 
 var app = express();
 const PORT = 3000;
