@@ -25,7 +25,7 @@ const updateDoctor = async (id, doctorData) => {
 
 const deleteDoctor = async (id) => {
   const deleted = await Doctores.destroy({
-    where: { id },
+    where: { doctorId: id },
   });
   return deleted;
 };

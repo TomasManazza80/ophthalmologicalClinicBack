@@ -18,7 +18,7 @@ const inicioRouter = require("./routes/inicioRoutes");
 const doctoresRouter = require("./routes/doctoresRoutes");
 const galleryRoutes = require("./routes/galleryRoutes");
 const cirugiasRoutes = require("./routes/cirugiasRoutes");
-
+const aboutUsRouter = require("./routes/aboutRoutes");
 
 const serviciosRoutes = require("./routes/serviciosRoutes");
 const cirugias = require('./models/cirugias/cirugias');
@@ -57,7 +57,7 @@ app.use(`/doctores`, doctoresRouter);
 app.use(`/servicios`, serviciosRoutes);
 app.use(`/gallery`, galleryRoutes);
 app.use(`/cirugias`, cirugiasRoutes);
-
+app.use(`/about`, aboutUsRouter);
 
 
 app.use(`${API_URL}/product`, productRouter);

@@ -46,8 +46,9 @@ const updateDoctor = async (req, res) => {
 };
 
 const deleteDoctor = async (req, res) => {
+  console.log("este es el id!!!!",req.params.doctorId);
   try {
-    const deleted = await doctorService.deleteDoctor(req.params.id);
+    const deleted = await doctorService.deleteDoctor(req.params.doctorId);
     if (deleted) {
       res.status(204).json({ message: 'Doctor eliminado' });
     } else {
